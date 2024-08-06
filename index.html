@@ -12,8 +12,8 @@
       margin: 0;
       font-family: 'Inter', sans-serif;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: left;
+      align-items: left;
       overflow: hidden;
       background-color: black; /* Ensure background color in case image fails */
     }
@@ -31,12 +31,11 @@
       position: absolute;
       height: 100%;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
-      backdrop-filter: blur(8px); /* Apply Gaussian blur */
+      backdrop-filter: blur(0px); /* Apply Gaussian blur */
       z-index: -1;
     }
     .content {
-      text-align: center;
+      text-align: left;
       color: white;
       position: relative;
       margin-bottom: 100px; /* Make room for the fixed bar */
@@ -65,8 +64,8 @@
       width: 100%;
       background-color: white;
       color: black;
-      text-align: center;
-      padding: 20px 0;
+      text-align: left;
+      padding: 10px 0;
       box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
       z-index: 1;
     }
