@@ -39,6 +39,7 @@
       text-align: center;
       color: white;
       position: relative;
+      margin-bottom: 100px; /* Make room for the fixed bar */
     }
     .title {
       font-size: 60px;
@@ -51,12 +52,23 @@
       margin: 10px 0;
     }
     .contact a {
-      color: white;
+      color: black;
       text-decoration: none;
       font-size: 1.2em;
     }
     .contact a:hover {
       text-decoration: underline;
+    }
+    .footer-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: white;
+      color: black;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1;
     }
   </style>
 </head>
@@ -64,6 +76,9 @@
   <div class="background"></div>
   <div class="blur"></div>
   <div class="content">
+    <!-- Add any content you want above the footer bar here -->
+  </div>
+  <div class="footer-bar">
     <h1 class="title">North Beverly Technologies</h1>
     <p class="subtitle">Innovative Technologies</p>
     <p class="subtitle">Founded 2022</p>
